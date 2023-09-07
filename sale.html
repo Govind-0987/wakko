@@ -1,0 +1,1351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shot</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <style>
+        .modal-backdrop {
+            position: inherit;
+        }
+    </style>
+    
+</head>
+<body>
+
+    <header class="header-wp">
+        <div class="container">
+            <div class="header-sec">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="menu-search-cmn">
+                            <ul>
+                                <li>
+                                    <a class="btn toggal-menu" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+                                        <img src="images/hamBargur.svg" alt="">
+                                      </a>
+                                      <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                                        <div class="offcanvas-header">
+                                          <h5 class="offcanvas-title" id="offcanvasExampleLabel">Menus</h5>
+                                          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                        </div>
+                                        <div class="offcanvas-body menusHeader">
+                                          <ul>
+                                            <li>
+                                                <a href="vestidos.html">Vestidos Curtos</a>
+                                            </li>
+                                            <li>
+                                                <a href="vestidos-longos.html">Vestidos Longos</a>
+                                            </li>
+                                            <li>
+                                                <a href="chemise.html">Chemise</a>
+                                            </li>
+                                            <li>
+                                                <a href="bolsas.html">Bolsas</a>
+                                            </li>
+                                            <li>
+                                                <a href="shorts.html">Shorts</a>
+                                            </li>
+                                            <li>
+                                                <a href="camisas.html">Camisas</a>
+                                            </li>
+                                            <li>
+                                                <a href="calças.html">Calças</a>
+                                            </li>
+                                            <li>
+                                                <a href="jaqueta.html">Jaqueta</a>
+                                            </li>
+                                            <li>
+                                                <a href="sale.html">Sale</a>
+                                            </li>
+                                          </ul>
+                                        </div>
+                                      </div>
+                                </li>
+                                <li>
+                                    <a class="btn toggal-menu" data-bs-toggle="offcanvas" href="#offcanvasExampleSearch" role="button" aria-controls="offcanvasExampleSearch">
+                                        <img src="images/search-Icon.svg" alt="">
+                                      </a>
+                                      <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExampleSearch" aria-labelledby="offcanvasExampleLabel">
+                                        <div class="offcanvas-header">
+                                          <h5 class="offcanvas-title" id="offcanvasExampleLabel">Menus</h5>
+                                          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                        </div>
+                                        <div class="offcanvas-body menusHeader">
+                                            <form class="d-flex" role="search">
+                                                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                                                <button class="btn btn-outline-primary" type="submit">Search</button>
+                                              </form>
+                                        </div>
+                                      </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="logo-header">
+                            <a href="index.html">
+                                <img src="images/logo.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="header-rightcon">
+                            <ul>
+                                <li>
+                                    <img src="images/login-Icon.svg" alt="">
+                                    <!-- <span>Log In</span> -->
+                                </li>
+                                    
+                                    <!-- <span>Carrinho</span> -->
+                                <li>
+                                    <a class="toggal-menu" data-bs-toggle="offcanvas" href="#offcanvasExampless" role="button" aria-controls="offcanvasExampless">
+                                        <img src="images/cart-Icon.svg" alt="">
+                                        </a>
+                                        <div class="offcanvas offcanvas-start offcanvasCart cart-saidbar" style="left: 55%" tabindex="-1" id="offcanvasExampless" aria-labelledby="offcanvasExampleLabel">
+                                        <div class="offcanvas-header">
+                                            <h6 class="offcanvas-title" id="offcanvasExampleLabel">CARRINHO DE COMPRAS</h6>
+                                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                        </div>
+                                        <div class="offcanvas-body menusHeader">
+                                            <div class="cart-productside">
+                                                <div id="cardProducadd" class="row">
+                                                    <div class="col-md-2">
+                                                        <img src="images/product-bg4.png" alt="">
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <span>
+                                                            CHEMISE COM CROPPED IZA (Preto, P)
+                                                        </span>
+                                                        <ul>
+                                                            <li>
+                                                                <button onclick="subdec()">
+                                                                    -
+                                                                </button>
+                                                            </li>
+                                                            <li>
+                                                                <span id="subvalue">
+                                                                    1
+                                                                </span>
+                                                            </li>
+                                                            <li>
+                                                                <button onclick="subinc()">
+                                                                    +
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="delet-pricesaid">
+                                                            <span onclick="deleteBtn()">
+                                                                <img src="images/delete-icon.png" alt="">
+                                                            </span>
+                                                            <p>R$<span id="pricevalue">219</span></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div id="totalID" class="total-price">
+                                                    <div class="row">
+                                                        <div class="col-md-6">
+                                                            <h6>Total</h6>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <div class="total-right">
+                                                                <strong>R$<span id="pricevalue2">219</span></strong>
+                                                            </div>
+                                                        </div>
+                                                        <a class="btn btn-outline-primary" href="#">
+                                                            Iniciar Compra
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </header>
+
+
+
+    
+
+    <section class="mais-vistos-wp" style="padding-top: 140px;">
+        <div class="container">
+            <div class="mais-vistos-sec">
+                <h5>Sale</h5>
+                <div data-aos="fade-up">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6 col-sm-6">
+                            
+                            <div class="product-cmnbg mais-vistosCmn">
+                            <a href="product-det.html">
+                                <img src="images/product-bg3.png" alt="" class="bgpro1">
+                                <img src="images/product-bg4.png" alt="" class="bgpro2">
+                                <div class="img-offprice">
+                                    <img src="images/off-Icon.svg" alt="">
+                                </div>
+                            </a>
+                                <div class="product-infobg">
+                                    <h6>VESTIDO DORI LASTEX CINZA</h6>
+                                    <ul>
+                                        <li><p>RS 1999</p></li>
+                                        <li><del>45678</del></li>
+                                    </ul>
+                                    <div class="comprar-btnmodal">
+                                        <!-- Button trigger modal -->
+                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                        Comprar
+                                    </button>
+                                    
+                                    
+                                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                            <h1 class="fs-5" id="exampleModalLabel">Chemise Com Cropped Lara</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body modalprice-bg">
+                                                <ul>
+                                                    <li><p>RS 1999</p></li>
+                                                    <li><del>45678</del></li>
+                                                </ul>
+                                            </div>
+                                            <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-primary">Save changes</button>
+                                            </div>
+                                        </div>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6">
+                            
+                            <div class="product-cmnbg mais-vistosCmn">
+                                <a href="product-det.html">
+                                <img src="images/product-bg.png" alt="" class="bgpro1">
+                                <img src="images/product-bg2.png" alt="" class="bgpro2">
+                                <div class="img-offprice">
+                                    <img src="images/off-Icon.svg" alt="">
+                                </div>
+                            </a>
+                                <div class="product-infobg">
+                                    <h6>VESTIDO DORI LASTEX CINZA</h6>
+                                    <ul>
+                                        <li><p>RS 1999</p></li>
+                                        <li><del>45678</del></li>
+                                    </ul>
+                                    <div class="comprar-btnmodal">
+                                        <!-- Button trigger modal -->
+                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                    Comprar
+                                    </button>
+
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="exampleModalLabel">Chemise Com Cropped Lara</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body modalprice-bg">
+                                            <ul>
+                                                <li><p>RS 1999</p></li>
+                                                <li><del>45678</del></li>
+                                            </ul>
+                                        </div>
+                                        <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-primary">Save changes</button>
+                                        </div>
+                                    </div>
+                                    </div>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6">
+                                
+                            <div class="product-cmnbg mais-vistosCmn">
+                            <a href="product-det.html">
+                                <img src="images/product-bg3.png" alt="" class="bgpro1">
+                                <img src="images/product-bg4.png" alt="" class="bgpro2">
+                                <div class="img-offprice">
+                                    <img src="images/off-Icon.svg" alt="">
+                                </div>
+                            </a>
+                                <div class="product-infobg">
+                                    <h6>VESTIDO DORI LASTEX CINZA</h6>
+                                    <ul>
+                                        <li><p>RS 1999</p></li>
+                                        <li><del>45678</del></li>
+                                    </ul>
+                                    <div class="comprar-btnmodal">
+                                        <!-- Button trigger modal -->
+                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                        Comprar
+                                    </button>
+                                    
+                                    
+                                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                            <h1 class="modal-title fs-5" id="exampleModalLabel">Chemise Com Cropped Lara</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body modalprice-bg">
+                                                <ul>
+                                                    <li><p>RS 1999</p></li>
+                                                    <li><del>45678</del></li>
+                                                </ul>
+                                            </div>
+                                            <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-primary">Save changes</button>
+                                            </div>
+                                        </div>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6">
+                            
+                            <div class="product-cmnbg mais-vistosCmn">
+                                <a href="product-det.html">
+                                <img src="images/product-bg.png" alt="" class="bgpro1">
+                                <img src="images/product-bg2.png" alt="" class="bgpro2">
+                                <div class="img-offprice">
+                                    <img src="images/off-Icon.svg" alt="">
+                                </div>
+                            </a>
+                                <div class="product-infobg">
+                                    <h6>VESTIDO DORI LASTEX CINZA</h6>
+                                    <ul>
+                                        <li><p>RS 1999</p></li>
+                                        <li><del>45678</del></li>
+                                    </ul>
+                                    <div class="comprar-btnmodal">
+                                        <!-- Button trigger modal -->
+                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                    Comprar
+                                    </button>
+
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="exampleModalLabel">Chemise Com Cropped Lara</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body modalprice-bg">
+                                            <ul>
+                                                <li><p>RS 1999</p></li>
+                                                <li><del>45678</del></li>
+                                            </ul>
+                                        </div>
+                                        <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-primary">Save changes</button>
+                                        </div>
+                                    </div>
+                                    </div>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                        </div> 
+                    </div>
+                </div>
+                <div data-aos="fade-up">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6 col-sm-6">
+                            
+                            <div class="product-cmnbg mais-vistosCmn">
+                            <a href="product-det.html">
+                                <img src="images/product-bg3.png" alt="" class="bgpro1">
+                                <img src="images/product-bg4.png" alt="" class="bgpro2">
+                                <div class="img-offprice">
+                                    <img src="images/off-Icon.svg" alt="">
+                                </div>
+                            </a>
+                                <div class="product-infobg">
+                                    <h6>VESTIDO DORI LASTEX CINZA</h6>
+                                    <ul>
+                                        <li><p>RS 1999</p></li>
+                                        <li><del>45678</del></li>
+                                    </ul>
+                                    <div class="comprar-btnmodal">
+                                        <!-- Button trigger modal -->
+                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                        Comprar
+                                    </button>
+                                    
+                                    
+                                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                            <h1 class="modal-title fs-5" id="exampleModalLabel">Chemise Com Cropped Lara</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body modalprice-bg">
+                                                <ul>
+                                                    <li><p>RS 1999</p></li>
+                                                    <li><del>45678</del></li>
+                                                </ul>
+                                            </div>
+                                            <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-primary">Save changes</button>
+                                            </div>
+                                        </div>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6">
+                            
+                            <div class="product-cmnbg mais-vistosCmn">
+                                <a href="product-det.html">
+                                <img src="images/product-bg.png" alt="" class="bgpro1">
+                                <img src="images/product-bg2.png" alt="" class="bgpro2">
+                                <div class="img-offprice">
+                                    <img src="images/off-Icon.svg" alt="">
+                                </div>
+                            </a>
+                                <div class="product-infobg">
+                                    <h6>VESTIDO DORI LASTEX CINZA</h6>
+                                    <ul>
+                                        <li><p>RS 1999</p></li>
+                                        <li><del>45678</del></li>
+                                    </ul>
+                                    <div class="comprar-btnmodal">
+                                        <!-- Button trigger modal -->
+                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                    Comprar
+                                    </button>
+
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="exampleModalLabel">Chemise Com Cropped Lara</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body modalprice-bg">
+                                            <ul>
+                                                <li><p>RS 1999</p></li>
+                                                <li><del>45678</del></li>
+                                            </ul>
+                                        </div>
+                                        <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-primary">Save changes</button>
+                                        </div>
+                                    </div>
+                                    </div>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6">
+                            
+                            <div class="product-cmnbg mais-vistosCmn">
+                            <a href="product-det.html">
+                                <img src="images/product-bg3.png" alt="" class="bgpro1">
+                                <img src="images/product-bg4.png" alt="" class="bgpro2">
+                                <div class="img-offprice">
+                                    <img src="images/off-Icon.svg" alt="">
+                                </div>
+                            </a>
+                                <div class="product-infobg">
+                                    <h6>VESTIDO DORI LASTEX CINZA</h6>
+                                    <ul>
+                                        <li><p>RS 1999</p></li>
+                                        <li><del>45678</del></li>
+                                    </ul>
+                                    <div class="comprar-btnmodal">
+                                        <!-- Button trigger modal -->
+                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                        Comprar
+                                    </button>
+                                    
+                                    
+                                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                            <h1 class="modal-title fs-5" id="exampleModalLabel">Chemise Com Cropped Lara</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body modalprice-bg">
+                                                <ul>
+                                                    <li><p>RS 1999</p></li>
+                                                    <li><del>45678</del></li>
+                                                </ul>
+                                            </div>
+                                            <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-primary">Save changes</button>
+                                            </div>
+                                        </div>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6">
+                            
+                            <div class="product-cmnbg mais-vistosCmn">
+                                <a href="product-det.html">
+                                <img src="images/product-bg.png" alt="" class="bgpro1">
+                                <img src="images/product-bg2.png" alt="" class="bgpro2">
+                                <div class="img-offprice">
+                                    <img src="images/off-Icon.svg" alt="">
+                                </div>
+                            </a>
+                                <div class="product-infobg">
+                                    <h6>VESTIDO DORI LASTEX CINZA</h6>
+                                    <ul>
+                                        <li><p>RS 1999</p></li>
+                                        <li><del>45678</del></li>
+                                    </ul>
+                                    <div class="comprar-btnmodal">
+                                        <!-- Button trigger modal -->
+                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                    Comprar
+                                    </button>
+
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="exampleModalLabel">Chemise Com Cropped Lara</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body modalprice-bg">
+                                            <ul>
+                                                <li><p>RS 1999</p></li>
+                                                <li><del>45678</del></li>
+                                            </ul>
+                                        </div>
+                                        <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-primary">Save changes</button>
+                                        </div>
+                                    </div>
+                                    </div>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6">
+                            
+                            <div class="product-cmnbg mais-vistosCmn">
+                            <a href="product-det.html">
+                                <img src="images/product-bg3.png" alt="" class="bgpro1">
+                                <img src="images/product-bg4.png" alt="" class="bgpro2">
+                                <div class="img-offprice">
+                                    <img src="images/off-Icon.svg" alt="">
+                                </div>
+                            </a>
+                                <div class="product-infobg">
+                                    <h6>VESTIDO DORI LASTEX CINZA</h6>
+                                    <ul>
+                                        <li><p>RS 1999</p></li>
+                                        <li><del>45678</del></li>
+                                    </ul>
+                                    <div class="comprar-btnmodal">
+                                        <!-- Button trigger modal -->
+                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                        Comprar
+                                    </button>
+                                    
+                                    
+                                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                            <h1 class="modal-title fs-5" id="exampleModalLabel">Chemise Com Cropped Lara</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body modalprice-bg">
+                                                <ul>
+                                                    <li><p>RS 1999</p></li>
+                                                    <li><del>45678</del></li>
+                                                </ul>
+                                            </div>
+                                            <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-primary">Save changes</button>
+                                            </div>
+                                        </div>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6">
+                            
+                            <div class="product-cmnbg mais-vistosCmn">
+                                <a href="product-det.html">
+                                <img src="images/product-bg.png" alt="" class="bgpro1">
+                                <img src="images/product-bg2.png" alt="" class="bgpro2">
+                                <div class="img-offprice">
+                                    <img src="images/off-Icon.svg" alt="">
+                                </div>
+                            </a>
+                                <div class="product-infobg">
+                                    <h6>VESTIDO DORI LASTEX CINZA</h6>
+                                    <ul>
+                                        <li><p>RS 1999</p></li>
+                                        <li><del>45678</del></li>
+                                    </ul>
+                                    <div class="comprar-btnmodal">
+                                        <!-- Button trigger modal -->
+                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                    Comprar
+                                    </button>
+
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="exampleModalLabel">Chemise Com Cropped Lara</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body modalprice-bg">
+                                            <ul>
+                                                <li><p>RS 1999</p></li>
+                                                <li><del>45678</del></li>
+                                            </ul>
+                                        </div>
+                                        <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-primary">Save changes</button>
+                                        </div>
+                                    </div>
+                                    </div>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6">
+                            
+                            <div class="product-cmnbg mais-vistosCmn">
+                            <a href="product-det.html">
+                                <img src="images/product-bg3.png" alt="" class="bgpro1">
+                                <img src="images/product-bg4.png" alt="" class="bgpro2">
+                                <div class="img-offprice">
+                                    <img src="images/off-Icon.svg" alt="">
+                                </div>
+                            </a>
+                                <div class="product-infobg">
+                                    <h6>VESTIDO DORI LASTEX CINZA</h6>
+                                    <ul>
+                                        <li><p>RS 1999</p></li>
+                                        <li><del>45678</del></li>
+                                    </ul>
+                                    <div class="comprar-btnmodal">
+                                        <!-- Button trigger modal -->
+                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                        Comprar
+                                    </button>
+                                    
+                                    
+                                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                            <h1 class="modal-title fs-5" id="exampleModalLabel">Chemise Com Cropped Lara</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body modalprice-bg">
+                                                <ul>
+                                                    <li><p>RS 1999</p></li>
+                                                    <li><del>45678</del></li>
+                                                </ul>
+                                            </div>
+                                            <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-primary">Save changes</button>
+                                            </div>
+                                        </div>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6">
+                            
+                            <div class="product-cmnbg mais-vistosCmn">
+                                <a href="product-det.html">
+                                <img src="images/product-bg.png" alt="" class="bgpro1">
+                                <img src="images/product-bg2.png" alt="" class="bgpro2">
+                                <div class="img-offprice">
+                                    <img src="images/off-Icon.svg" alt="">
+                                </div>
+                            </a>
+                                <div class="product-infobg">
+                                    <h6>VESTIDO DORI LASTEX CINZA</h6>
+                                    <ul>
+                                        <li><p>RS 1999</p></li>
+                                        <li><del>45678</del></li>
+                                    </ul>
+                                    <div class="comprar-btnmodal">
+                                        <!-- Button trigger modal -->
+                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                    Comprar
+                                    </button>
+
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="exampleModalLabel">Chemise Com Cropped Lara</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body modalprice-bg">
+                                            <ul>
+                                                <li><p>RS 1999</p></li>
+                                                <li><del>45678</del></li>
+                                            </ul>
+                                        </div>
+                                        <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-primary">Save changes</button>
+                                        </div>
+                                    </div>
+                                    </div>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6">
+                            
+                            <div class="product-cmnbg mais-vistosCmn">
+                            <a href="product-det.html">
+                                <img src="images/product-bg3.png" alt="" class="bgpro1">
+                                <img src="images/product-bg4.png" alt="" class="bgpro2">
+                                <div class="img-offprice">
+                                    <img src="images/off-Icon.svg" alt="">
+                                </div>
+                            </a>
+                                <div class="product-infobg">
+                                    <h6>VESTIDO DORI LASTEX CINZA</h6>
+                                    <ul>
+                                        <li><p>RS 1999</p></li>
+                                        <li><del>45678</del></li>
+                                    </ul>
+                                    <div class="comprar-btnmodal">
+                                        <!-- Button trigger modal -->
+                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                        Comprar
+                                    </button>
+                                    
+                                    
+                                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                            <h1 class="modal-title fs-5" id="exampleModalLabel">Chemise Com Cropped Lara</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body modalprice-bg">
+                                                <ul>
+                                                    <li><p>RS 1999</p></li>
+                                                    <li><del>45678</del></li>
+                                                </ul>
+                                            </div>
+                                            <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-primary">Save changes</button>
+                                            </div>
+                                        </div>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6">
+                            
+                            <div class="product-cmnbg mais-vistosCmn">
+                                <a href="product-det.html">
+                                <img src="images/product-bg.png" alt="" class="bgpro1">
+                                <img src="images/product-bg2.png" alt="" class="bgpro2">
+                                <div class="img-offprice">
+                                    <img src="images/off-Icon.svg" alt="">
+                                </div>
+                            </a>
+                                <div class="product-infobg">
+                                    <h6>VESTIDO DORI LASTEX CINZA</h6>
+                                    <ul>
+                                        <li><p>RS 1999</p></li>
+                                        <li><del>45678</del></li>
+                                    </ul>
+                                    <div class="comprar-btnmodal">
+                                        <!-- Button trigger modal -->
+                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                    Comprar
+                                    </button>
+
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="exampleModalLabel">Chemise Com Cropped Lara</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body modalprice-bg">
+                                            <ul>
+                                                <li><p>RS 1999</p></li>
+                                                <li><del>45678</del></li>
+                                            </ul>
+                                        </div>
+                                        <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-primary">Save changes</button>
+                                        </div>
+                                    </div>
+                                    </div>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6">
+                            
+                            <div class="product-cmnbg mais-vistosCmn">
+                            <a href="product-det.html">
+                                <img src="images/product-bg3.png" alt="" class="bgpro1">
+                                <img src="images/product-bg4.png" alt="" class="bgpro2">
+                                <div class="img-offprice">
+                                    <img src="images/off-Icon.svg" alt="">
+                                </div>
+                            </a>
+                                <div class="product-infobg">
+                                    <h6>VESTIDO DORI LASTEX CINZA</h6>
+                                    <ul>
+                                        <li><p>RS 1999</p></li>
+                                        <li><del>45678</del></li>
+                                    </ul>
+                                    <div class="comprar-btnmodal">
+                                        <!-- Button trigger modal -->
+                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                        Comprar
+                                    </button>
+                                    
+                                    
+                                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                            <h1 class="modal-title fs-5" id="exampleModalLabel">Chemise Com Cropped Lara</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body modalprice-bg">
+                                                <ul>
+                                                    <li><p>RS 1999</p></li>
+                                                    <li><del>45678</del></li>
+                                                </ul>
+                                            </div>
+                                            <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-primary">Save changes</button>
+                                            </div>
+                                        </div>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6">
+                            
+                            <div class="product-cmnbg mais-vistosCmn">
+                                <a href="product-det.html">
+                                <img src="images/product-bg.png" alt="" class="bgpro1">
+                                <img src="images/product-bg2.png" alt="" class="bgpro2">
+                                <div class="img-offprice">
+                                    <img src="images/off-Icon.svg" alt="">
+                                </div>
+                            </a>
+                                <div class="product-infobg">
+                                    <h6>VESTIDO DORI LASTEX CINZA</h6>
+                                    <ul>
+                                        <li><p>RS 1999</p></li>
+                                        <li><del>45678</del></li>
+                                    </ul>
+                                    <div class="comprar-btnmodal">
+                                        <!-- Button trigger modal -->
+                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                    Comprar
+                                    </button>
+
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="exampleModalLabel">Chemise Com Cropped Lara</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body modalprice-bg">
+                                            <ul>
+                                                <li><p>RS 1999</p></li>
+                                                <li><del>45678</del></li>
+                                            </ul>
+                                        </div>
+                                        <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-primary">Save changes</button>
+                                        </div>
+                                    </div>
+                                    </div>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6">
+                            
+                            <div class="product-cmnbg mais-vistosCmn">
+                            <a href="product-det.html">
+                                <img src="images/product-bg3.png" alt="" class="bgpro1">
+                                <img src="images/product-bg4.png" alt="" class="bgpro2">
+                                <div class="img-offprice">
+                                    <img src="images/off-Icon.svg" alt="">
+                                </div>
+                            </a>
+                                <div class="product-infobg">
+                                    <h6>VESTIDO DORI LASTEX CINZA</h6>
+                                    <ul>
+                                        <li><p>RS 1999</p></li>
+                                        <li><del>45678</del></li>
+                                    </ul>
+                                    <div class="comprar-btnmodal">
+                                        <!-- Button trigger modal -->
+                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                        Comprar
+                                    </button>
+                                    
+                                    
+                                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                            <h1 class="modal-title fs-5" id="exampleModalLabel">Chemise Com Cropped Lara</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body modalprice-bg">
+                                                <ul>
+                                                    <li><p>RS 1999</p></li>
+                                                    <li><del>45678</del></li>
+                                                </ul>
+                                            </div>
+                                            <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-primary">Save changes</button>
+                                            </div>
+                                        </div>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6">
+                            
+                            <div class="product-cmnbg mais-vistosCmn">
+                                <a href="product-det.html">
+                                <img src="images/product-bg.png" alt="" class="bgpro1">
+                                <img src="images/product-bg2.png" alt="" class="bgpro2">
+                                <div class="img-offprice">
+                                    <img src="images/off-Icon.svg" alt="">
+                                </div>
+                            </a>
+                                <div class="product-infobg">
+                                    <h6>VESTIDO DORI LASTEX CINZA</h6>
+                                    <ul>
+                                        <li><p>RS 1999</p></li>
+                                        <li><del>45678</del></li>
+                                    </ul>
+                                    <div class="comprar-btnmodal">
+                                        <!-- Button trigger modal -->
+                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                    Comprar
+                                    </button>
+
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="exampleModalLabel">Chemise Com Cropped Lara</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body modalprice-bg">
+                                            <ul>
+                                                <li><p>RS 1999</p></li>
+                                                <li><del>45678</del></li>
+                                            </ul>
+                                        </div>
+                                        <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-primary">Save changes</button>
+                                        </div>
+                                    </div>
+                                    </div>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6">
+                            
+                            <div class="product-cmnbg mais-vistosCmn">
+                            <a href="product-det.html">
+                                <img src="images/product-bg3.png" alt="" class="bgpro1">
+                                <img src="images/product-bg4.png" alt="" class="bgpro2">
+                                <div class="img-offprice">
+                                    <img src="images/off-Icon.svg" alt="">
+                                </div>
+                            </a>
+                                <div class="product-infobg">
+                                    <h6>VESTIDO DORI LASTEX CINZA</h6>
+                                    <ul>
+                                        <li><p>RS 1999</p></li>
+                                        <li><del>45678</del></li>
+                                    </ul>
+                                    <div class="comprar-btnmodal">
+                                        <!-- Button trigger modal -->
+                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                        Comprar
+                                    </button>
+                                    
+                                    
+                                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                            <h1 class="modal-title fs-5" id="exampleModalLabel">Chemise Com Cropped Lara</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body modalprice-bg">
+                                                <ul>
+                                                    <li><p>RS 1999</p></li>
+                                                    <li><del>45678</del></li>
+                                                </ul>
+                                            </div>
+                                            <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-primary">Save changes</button>
+                                            </div>
+                                        </div>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6">
+                            
+                            <div class="product-cmnbg mais-vistosCmn">
+                                <a href="product-det.html">
+                                <img src="images/product-bg.png" alt="" class="bgpro1">
+                                <img src="images/product-bg2.png" alt="" class="bgpro2">
+                                <div class="img-offprice">
+                                    <img src="images/off-Icon.svg" alt="">
+                                </div>
+                            </a>
+                                <div class="product-infobg">
+                                    <h6>VESTIDO DORI LASTEX CINZA</h6>
+                                    <ul>
+                                        <li><p>RS 1999</p></li>
+                                        <li><del>45678</del></li>
+                                    </ul>
+                                    <div class="comprar-btnmodal">
+                                        <!-- Button trigger modal -->
+                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                    Comprar
+                                    </button>
+
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="exampleModalLabel">Chemise Com Cropped Lara</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body modalprice-bg">
+                                            <ul>
+                                                <li><p>RS 1999</p></li>
+                                                <li><del>45678</del></li>
+                                            </ul>
+                                        </div>
+                                        <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-primary">Save changes</button>
+                                        </div>
+                                    </div>
+                                    </div>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="footer-wp">
+        <div class="container">
+            <div class="footer-sec">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="footer-fistsec">
+                            <h6>ASSINE NOSSA NEWSLETTER</h6>
+                            <div class="input-group mb-3">
+                                <input type="email" class="form-control" placeholder="E-mail" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                              </div>
+                              <ul>
+                                <li>
+                                    <img src="images/facebook-Icon.svg" alt="">
+                                </li>
+                                <li>
+                                    <img src="images/instagram-icon.svg" alt="">
+                                </li>
+                              </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="footer-twosec">
+                            <h6>DEPARTAMENTOS</h6>
+                            <ul>
+                                <li>
+                                    <a href="#">Vestidos Curtos</a>
+                                </li>
+                                <li>
+                                    <a href="#">Vestidos Longos</a>
+                                </li>
+                                <li>
+                                    <a href="#">Chemise</a>
+                                </li>
+                                <li>
+                                    <a href="#">Bolsas</a>
+                                </li>
+                                <li>
+                                    <a href="#">Shorts</a>
+                                </li>
+                                <li>
+                                    <a href="#">Camisas</a>
+                                </li>
+                                <li>
+                                    <a href="#">Calças</a>
+                                </li>
+                                <li>
+                                    <a href="#">Jaqueta</a>
+                                </li>
+                                <li>
+                                    <a href="#">Sale</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="footer-lastsec">
+                            <h6>ENTRE EM CONTATO</h6>
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        1234567890
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        1234567890
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        govind@gmail.com
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Rua João Cachoeira, n° 571 - Sala 16
+                                    </a>
+                                </li>
+                                
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="">
+                
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
+
+<script>
+    function openCity(evt, cityName) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+      document.getElementById(cityName).style.display = "block";
+      evt.currentTarget.className += " active";
+    }
+    </script>
+    
+    <script>
+            const lis = document.querySelectorAll('li');
+
+            function changeBackgroundColor(element, color) {
+            element.style.backgroundColor = color;
+            }
+
+            function resetBackgroundColor() {
+            lis.forEach(function(li) {
+                changeBackgroundColor(li, '');
+            });
+            }
+
+            lis.forEach(function(li) {
+            li.addEventListener('click', function() {
+                resetBackgroundColor();
+                changeBackgroundColor(li, '#ceceff');
+            });
+            });
+
+            // 
+            
+            var subww = 1;
+            var valueprice = 219;
+            function subinc(){
+                if (subww < 50){
+                    subww++
+                    document.getElementById('subvalue').innerHTML = subww;
+                    var valuesub = document.getElementById('pricevalue');
+
+                    var currentValue = parseInt(valuesub.innerHTML);
+                    var newValue = currentValue + 219;
+
+                    valuesub.innerHTML = newValue;
+
+                    var valuesub = document.getElementById('pricevalue2');
+
+                    var currentValue = parseInt(valuesub.innerHTML);
+                    var newValue = currentValue + 219;
+
+                    valuesub.innerHTML = newValue;
+                }
+            }
+
+            function subdec() {
+                if (subww > 1) {
+                    subww--;
+                    document.getElementById('subvalue').innerHTML = subww;
+
+                    var valuesub = document.getElementById('pricevalue');
+                    var currentValue = parseInt(valuesub.innerHTML);
+                    var newValue = currentValue - 219;
+
+                    valuesub.innerHTML = newValue;
+
+                    var valuesub = document.getElementById('pricevalue2');
+                    var currentValue = parseInt(valuesub.innerHTML);
+                    var newValue = currentValue - 219;
+
+                    valuesub.innerHTML = newValue;
+                    
+                }
+            }
+
+
+            // 
+
+
+            function deleteBtn() {
+console.log("Button clicked"); // Add this line for debugging
+document.getElementById('cardProducadd').style.display = "none";
+document.getElementById('totalID').style.display = "none";
+// 
+}
+            
+    </script>
+    
+</body>
+</html>

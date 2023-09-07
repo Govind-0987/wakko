@@ -1,0 +1,97 @@
+
+
+@media only screen and (max-width: 992px) {
+    section.banner-sec img {
+        margin-top: 50px;
+    }
+    .bg-service-cmn {
+        padding: 30px 10px;
+        height: 200px;
+    }
+    .footer-twosec {
+        margin-left: 50px;
+    }
+
+    .total-price a {
+        width: 60%;
+    }
+  }
+
+  @media only screen and (max-width: 767px) {
+    .bg-service-cmn {
+        margin-bottom: 20px;
+    }
+
+    .header-sec .col-md-4 {
+        max-width: 33.3%;
+    }
+
+    .footer-twosec {
+        margin-left: 0px;
+    }
+
+    .footer-fistsec {
+        margin-bottom: 40px;
+    }
+
+    .footer-twosec {
+        margin-bottom: 40px;
+    }
+
+    .delet-pricesaid {
+        text-align: start;
+    }
+
+    div#totalID .col-md-6 {
+        max-width: 50%;
+    }
+
+    section.mais-vistos-wp {
+        padding-top: 90px !important;
+    }
+
+    
+  }
+
+
+  @media only screen and (max-width: 576px) {
+    .product-cmnbg {
+        text-align: center;
+    }
+
+    .img-offprice {
+        left: 27%;
+    }
+
+    .total-price a {
+        width: 95%;
+        margin-top: 20px;
+    }
+
+    div#offcanvasExampless {
+        left: 0px !important;
+        width: 100% !important;
+    }
+    
+    
+  }
+
+  @media only screen and (max-width: 400px) {
+
+    
+    
+  }
+
+  
+  @media only screen and (max-width: 370px) {
+
+    
+    
+  }
+
+  @media only screen and (max-width: 340px) {
+
+    
+    
+  }
+
