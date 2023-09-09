@@ -17,6 +17,33 @@
     }
   }
 
+  @media only screen and (max-width: 912px) {
+    .increment-decrement li {
+        margin-right: 5px;
+    }
+    .increment-decrement button {
+        padding: 4px;
+        width: 32px;
+    }
+    .comprar-modal button {
+        width: 100%;
+    }
+  }
+
+  @media only screen and (max-width: 821px) {
+    .increment-decrement li {
+        /* display: inline-block; */
+        margin-right: 5px;
+    }
+    .increment-decrement button {
+        padding: 4px;
+        width: 32px;
+    }
+    .comprar-modal button {
+        width: 100%;
+    }
+  }
+
   @media only screen and (max-width: 767px) {
 
     div#London {
@@ -116,12 +143,47 @@
     
   }
 
+  @media only screen and (max-width: 540px) {
+    .img-productbg {
+        top: 7%;
+    }
+
+  }
+
   @media only screen and (max-width: 536px) {
 
   button.tablinks {
     max-width: 20%;
 }
 
+  }
+
+  @media only screen and (max-width: 414px) {
+    .smal-product {
+        margin-top: 96%;
+    }
+    .img-productbg {
+        /* position: absolute; */
+        top: 6%;
+        /* margin-right: 18px; */
+    }
+    .smal-product {
+        margin-top: 87%;
+    }
+    
+
+  }
+
+  @media only screen and (max-width: 413px) {
+    .img-productbg {
+        /* position: absolute; */
+        top: 6%;
+        /* margin-right: 18px; */
+    }
+
+    .smal-product {
+        margin-top: 87%;
+    }
   }
 
   @media only screen and (max-width: 400px) {
@@ -134,13 +196,33 @@
     
   }
 
+  @media only screen and (max-width: 394px) {
+    .img-productbg {
+        /* position: absolute; */
+        top: 6%;
+        /* margin-right: 18px; */
+    }
+    .smal-product {
+        margin-top: 86%;
+    }
+  }
+
   
-  @media only screen and (max-width: 370px) {
+  @media only screen and (max-width: 376px) {
+    .img-productbg {
+        top: 8%;
+    }
 
     .smal-product {
-        margin-top: 85%;
+        margin-top: 86%;
     }
     
+  }
+
+  @media only screen and (max-width: 360px) {
+    .img-productbg {
+        top: 7%;
+    }
   }
 
   @media only screen and (max-width: 340px) {
@@ -149,5 +231,11 @@
         margin-top: 84%;
     }
     
+  }
+
+  @media only screen and (max-width: 280px) {
+    .header-rightcon li {
+        margin-right: 5px;
+    }
   }
 
