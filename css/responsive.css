@@ -20,6 +20,10 @@
   @media only screen and (max-width: 767px) {
 
     div#London {
+        
+    }
+
+    .img-productbg{
         position: absolute;
         top: 10%;
         margin-right: 18px;
@@ -31,10 +35,6 @@
 
     .smal-product {
         margin-top: 94%;
-    }
-
-    div#London {
-        /* max-width: 86%; */
     }
 
     .productdet-right {
@@ -84,8 +84,12 @@
 
   @media only screen and (max-width: 576px) {
 
-    .product-cmnbg:hover {
+    .product-cmnbg {
         margin: 0 25% 30px;
+    }
+
+    .img-offprice {
+        left: 4%;
     }
 
     .smal-product {
@@ -95,12 +99,8 @@
         text-align: center;
     }
 
-    .img-offprice {
-        left: 27%;
-    }
-
     .product-cmnbg.mais-vistosCmn:hover .img-offprice {
-        display: none;
+        display: block;
     }
 
     .total-price a {
