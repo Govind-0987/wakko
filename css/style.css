@@ -147,7 +147,7 @@ section.banner-sec img {
 }
 
 .product-cmnbg:hover .bgpro1 {
-    display: none;
+    /* display: none; */
 }
 
 .product-infobg p {
@@ -168,7 +168,7 @@ section.banner-sec img {
 }
 
 .product-cmnbg:hover {
-    border: 1px solid #e8e8e8;
+    /* border: 1px solid #e8e8e8; */
 }
 
 .product-sec h5 {
