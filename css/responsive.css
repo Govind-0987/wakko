@@ -59,6 +59,10 @@
 
   @media only screen and (max-width: 767px) {
 
+    .product-sec {
+        padding: 90px 0 0;
+    }
+
     .productdet-right {
         position: relative;
     }
@@ -130,13 +134,33 @@
 
   @media only screen and (max-width: 576px) {
 
+    .footer-twosec li {
+    display: inline-block;
+    padding-right: 14px;
+    margin-right: 14px;
+    border-right: 1px solid;
+}
+
+    .product-infobg {
+    padding: 14px 0px;
+    text-align: start;
+}
+
+    .product-sec .col-lg-3.col-md-6.col-sm-6 {
+    max-width: 50%;
+}
+
     button.tablinks {
         max-width: 33%;
     }
 
     .product-cmnbg {
-        margin: 0 10% 30px;
-    }
+    margin: 0 0% 30px;
+}
+
+.mais-vistos-sec .col-lg-3.col-md-6.col-sm-6 {
+    max-width: 50%;
+}
 
     .img-offprice {
         left: 4%;
@@ -223,6 +247,11 @@
   }
 
   @media only screen and (max-width: 400px) {
+
+    .footer-twosec li {
+        padding-right: 8px;
+        margin-right: 8px;
+    }
 
     .smal-product {
         margin-top: 85%;
