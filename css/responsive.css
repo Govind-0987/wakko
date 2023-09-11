@@ -192,6 +192,10 @@
 
   @media only screen and (max-width: 540px) {
 
+    .container {
+        overflow: hidden;
+    }
+
     .comprar-modal .modal-dialog {
         margin-right: 0px;
         width: 100%;
@@ -214,6 +218,10 @@
   }
 
   @media only screen and (max-width: 414px) {
+
+    .product-cmnbg.product-cmnbg2 {
+        margin-left: 70px;
+    }
     
     .row.modal-carrinho {
         margin-top: 16px;
@@ -262,6 +270,10 @@
   }
 
   @media only screen and (max-width: 394px) {
+    .product-cmnbg.product-cmnbg2 {
+        margin-left: 56px;
+    }
+
     .img-productbg {
         /* position: absolute; */
         top: 6%;
@@ -277,6 +289,10 @@
 
   
   @media only screen and (max-width: 376px) {
+
+    .product-cmnbg.product-cmnbg2 {
+        margin-left: 50px;
+    }    
     
     .row.modal-carrinho p {
         margin: 0;
@@ -296,6 +312,11 @@
   }
 
   @media only screen and (max-width: 360px) {
+
+    .product-cmnbg.product-cmnbg2 {
+        margin-left: 40px;
+    }
+    
     li.carrinho-bg button {
         font-size: 12px;
     }
