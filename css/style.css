@@ -465,3 +465,38 @@ li.carrinho-bg {
     text-align: center;
     margin-bottom: 20px;
 }
+
+.delivery-wpbg ul {
+    margin: 0;
+    border: 1px solid #e1e1e1;
+    padding: 8px;
+    /* width: 80%; */
+}
+
+.delivery-wpbg li {
+    display: inline-block;
+    margin-right: 10px;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.delivery-wpbg {
+    padding-top: 30px;
+}
+
+.modal-dialog.knowMore {
+    margin-top: 80px;
+}
+
+.knowbg-row {
+    text-align: center;
+}
+
+.conditions-bgul ul {
+    border: none;
+}
+
+.modal-body.modal-bodybg-scrool {
+    height: 300px;
+    overflow: scroll;
+}

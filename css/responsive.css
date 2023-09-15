@@ -8,6 +8,10 @@
 
 @media only screen and (max-width: 992px) {
 
+    .delivery-wpbg li {
+        margin-right: 2px;
+    }
+
     section.product-det {
         padding-top: 54px !important;
     }
@@ -111,7 +115,7 @@
     .ul-productincdec {
         position: absolute;
         right: 0;
-        top: 60%;
+        top: 31%;
     }
 
     
