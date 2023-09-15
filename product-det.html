@@ -13,6 +13,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"> -->
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
     <style>
         section.product-det {
     padding-top: 63px;
@@ -346,6 +349,82 @@
         </div>
     </section>
 
+    <div class="timeproduct-wp">
+        <div class="container">
+            <div class="owl-carousel">
+                <div class="item">
+                    <div class="itams-shopingpro">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <img src="images/product-bg4.png" alt="">
+                            </div>
+                            <div class="col-md-9">
+                                <div class="slider-detbg">
+                                    <p>Jayshree Puthran in Mumbai</p>
+                                    <strong>Cotton Designer Afghani P...</strong><br>
+                                    <ul>
+                                        <li>
+                                            <span>36 minutes ago</span>
+                                        </li>
+                                        <li>
+                                            <a href="#">View</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="itams-shopingpro">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <img src="images/product-bg4.png" alt="">
+                            </div>
+                            <div class="col-md-9">
+                                <div class="slider-detbg">
+                                    <p>Jayshree Puthran in Mumbai</p>
+                                    <strong>Cotton Designer Afghani P...</strong><br>
+                                    <ul>
+                                        <li>
+                                            <span>36 minutes ago</span>
+                                        </li>
+                                        <li>
+                                            <a href="#">View</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="itams-shopingpro">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <img src="images/product-bg4.png" alt="">
+                            </div>
+                            <div class="col-md-9">
+                                <div class="slider-detbg">
+                                    <p>Jayshree Puthran in Mumbai</p>
+                                    <strong>Cotton Designer Afghani P...</strong><br>
+                                    <ul>
+                                        <li>
+                                            <span>36 minutes ago</span>
+                                        </li>
+                                        <li>
+                                            <a href="#">View</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <section class="product-wp">
         <div class="container">
                 <div class="product-sec">
@@ -581,6 +660,9 @@
     <!-- <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script> -->
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script> -->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script>
         // $('.').slick({
         // dots: true,
@@ -728,6 +810,29 @@
                 }
             }
         </script>
+
+<script>
+    $(document).ready(function () {
+        $(".owl-carousel").owlCarousel({
+            items: 3, // Number of items to display
+            loop: true, // Infinite loop
+            margin: 10, // Space between items
+            autoplay: true, // Auto-play
+            autoplayTimeout: 3000, // Auto-play timeout in milliseconds (3 seconds)
+            responsive: {
+                0: {
+                    items: 1 // Number of items to display on small screens
+                },
+                768: {
+                    items: 2 // Number of items to display on medium screens
+                },
+                992: {
+                    items: 3 // Number of items to display on large screens
+                }
+            }
+        });
+    });
+</script>
     
 </body>
 </html>

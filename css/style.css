@@ -421,3 +421,42 @@ li.carrinho-bg {
 .row.total-pricebg .col-md-5 {
     padding: 0;
 }
+
+.itams-shopingpro p {
+    margin: 0;
+}
+
+.itams-shopingpro .row {
+    align-items: center;
+}
+
+.itams-shopingpro ul {
+    padding: 0;
+    margin: 0;
+}
+
+.itams-shopingpro li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.itams-shopingpro a {
+    text-decoration: none;
+    color: mediumblue;
+    font-weight: 600;
+}
+
+.itams-shopingpro span {
+    font-size: 14px;
+    font-weight: 500;
+    color: green;
+}
+
+.itams-shopingpro {
+    border: 1px solid #d3d3d3;
+    border-radius: 4px;
+}
+
+.timeproduct-wp {
+    padding: 50px 0 0 0;
+}
