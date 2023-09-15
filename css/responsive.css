@@ -258,15 +258,15 @@
 
   @media only screen and (max-width: 536px) {
 
-
+    .modal-body.modal-bodybg-scrool {
+        height: 500px;
+    }
 
   }
 
   @media only screen and (max-width: 414px) {
 
-    .modal-body.modal-bodybg-scrool {
-        height: 500px;
-    }
+    
 
     .ul-productincdec {
         top: 27%;
