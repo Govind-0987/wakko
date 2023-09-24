@@ -1,0 +1,879 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shot</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/> -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"> -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+    <style>
+
+
+
+        #cmnnonebg2{
+            display: none;
+        }
+
+        #cnmnonebg3{
+            display: none;
+        }
+
+        #cnmnonebg4{
+            display: none;
+        }
+
+        .payamauntbg {
+    box-shadow: 0px 0px 20px #e5e5e5;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+        .orderbtn-bg {
+    float: right;
+}
+
+        div#cnmnonebg4 img {
+    max-width: 100%;
+}
+
+        .billright {
+    float: right;
+}
+
+        .paymentmet-wp {
+    box-shadow: 0px 0px 20px #e5e5e5;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+        ul.bacickdet li {
+    border: none;
+    width: 203px;
+    padding: 0;
+    background: none !important;
+}
+
+        .cmnnonebg2-left img {
+    max-width: 100%;
+}
+
+li.total-amountbg {
+    width: 100% !important;
+    text-align: start !important;
+}
+
+.bordernone {
+    border: none !important;
+}
+
+
+        header.header-wp {
+            top: 0;
+        }
+
+        .buyproduct-wp {
+            padding-top: 90px;
+        }
+
+        .buyproduct-sec li {
+            display: inline-block;
+            border: 1px solid #d9d9d9;
+            border-radius: 40px;
+            padding: 6px;
+            width: 38px;
+            text-align: center;
+        }
+
+        .buyproduct-sec ul {
+            padding: 0;
+        }
+
+        .buyproduct-sec {
+    border: 1px solid #c7c7c7;
+    padding: 20px;
+    margin: 0 20%;
+}
+
+@media only screen and (max-width: 1200px) {
+    .buyproduct-sec {
+        margin: 0 10%;
+    }
+}
+
+
+@media only screen and (max-width: 992px) {
+    .buyproduct-sec {
+        margin: 0 0%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    div#cmnnonebg1 ul {
+        margin: 0;
+    }
+
+    .buyproduct-sec h5 {
+        margin-top: 20px;
+    }
+
+    .cmnnonebg2-left p {
+        margin-top: 20px;
+    }
+
+    .orderbtn-bg {
+        float: left;
+    }
+}
+
+
+    </style>
+
+</head>
+<body>
+
+
+    <header class="header-wp">
+        <div class="container">
+            <div class="header-sec">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="menu-search-cmn">
+                            <ul>
+                                <li>
+                                    <a class="btn toggal-menu" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+                                        <img src="images/hamBargur.svg" alt="">
+                                      </a>
+                                      <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                                        <div class="offcanvas-header">
+                                          <h5 class="offcanvas-title" id="offcanvasExampleLabel">Menus</h5>
+                                          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                        </div>
+                                        <div class="offcanvas-body menusHeader">
+                                          <ul>
+                                            <li>
+                                                <a href="vestidos.html">Vestidos Curtos</a>
+                                            </li>
+                                            <li>
+                                                <a href="vestidos-longos.html">Vestidos Longos</a>
+                                            </li>
+                                            <li>
+                                                <a href="chemise.html">Chemise</a>
+                                            </li>
+                                            <li>
+                                                <a href="bolsas.html">Bolsas</a>
+                                            </li>
+                                            <li>
+                                                <a href="shorts.html">Shorts</a>
+                                            </li>
+                                            <li>
+                                                <a href="camisas.html">Camisas</a>
+                                            </li>
+                                            <li>
+                                                <a href="calças.html">Calças</a>
+                                            </li>
+                                            <li>
+                                                <a href="jaqueta.html">Jaqueta</a>
+                                            </li>
+                                            <li>
+                                                <a href="sale.html">Sale</a>
+                                            </li>
+                                          </ul>
+                                        </div>
+                                      </div>
+                                </li>
+                                <li>
+                                    <a class="btn toggal-menu" data-bs-toggle="offcanvas" href="#offcanvasExampleSearch" role="button" aria-controls="offcanvasExampleSearch">
+                                        <img src="images/search-Icon.svg" alt="">
+                                      </a>
+                                      <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExampleSearch" aria-labelledby="offcanvasExampleLabel">
+                                        <div class="offcanvas-header">
+                                          <h5 class="offcanvas-title" id="offcanvasExampleLabel">Menus</h5>
+                                          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                        </div>
+                                        <div class="offcanvas-body menusHeader">
+                                            <form class="d-flex" role="search">
+                                                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                                                <button class="btn btn-outline-primary" type="submit">Search</button>
+                                              </form>
+                                        </div>
+                                      </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="logo-header">
+                            <a href="index.html">
+                                <img src="images/logo.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="header-rightcon">
+                            <ul>
+                                <li>
+                                    <img src="images/login-Icon.svg" alt="">
+                                    <!-- <span>Log In</span> -->
+                                </li>
+                                    
+                                    <!-- <span>Carrinho</span> -->
+                                <li>
+                                    <a class="toggal-menu" data-bs-toggle="offcanvas" href="#offcanvasExampless" role="button" aria-controls="offcanvasExampless">
+                                        <img src="images/cart-Icon.svg" alt="">
+                                        </a>
+                                        <div class="offcanvas offcanvas-start offcanvasCart cart-saidbar" style="left: 55%" tabindex="-1" id="offcanvasExampless" aria-labelledby="offcanvasExampleLabel">
+                                        <div class="offcanvas-header">
+                                            <h6 class="offcanvas-title" id="offcanvasExampleLabel">CARRINHO DE COMPRAS</h6>
+                                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                        </div>
+                                        <div class="offcanvas-body menusHeader">
+                                            <div class="cart-productside">
+                                                <div id="cardProducadd" class="row">
+                                                    <div class="col-md-2">
+                                                        <img src="images/product-bg4.png" alt="">
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <span>
+                                                            CHEMISE COM CROPPED IZA (Preto, P)
+                                                        </span>
+                                                        <ul>
+                                                            <li>
+                                                                <button onclick="subdec()">
+                                                                    -
+                                                                </button>
+                                                            </li>
+                                                            <li>
+                                                                <span id="subvalue">
+                                                                    1
+                                                                </span>
+                                                            </li>
+                                                            <li>
+                                                                <button onclick="subinc()">
+                                                                    +
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="delet-pricesaid">
+                                                            <span onclick="deleteBtn()">
+                                                                <img src="images/delete-icon.png" alt="">
+                                                            </span>
+                                                            <p>R$<span id="pricevalue">219</span></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div id="totalID" class="total-price">
+                                                    <div class="row">
+                                                        <div class="col-md-6">
+                                                            <h6>Total</h6>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <div class="total-right">
+                                                                <strong>R$<span id="pricevalue2">219</span></strong>
+                                                            </div>
+                                                        </div>
+                                                        <a class="btn btn-outline-primary" href="#">
+                                                            Iniciar Compra
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </header>
+
+
+    <section class="buyproduct-wp">
+        <div class="container">
+            <div class="buyproduct-sec">
+                <div id="cmnnonebg1">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img src="images/product-bg2.png" alt="">
+                        </div>
+                        <div class="col-md-6">
+                            <h5>
+                                Select Size
+                            </h5>
+                            <ul>
+                                <li id="p" style="">P</li>
+                                <li id="m" style="">M</li>
+                                <li id="g" style="background-color: rgb(206, 206, 255);">G</li>
+                            </ul>
+                            <br>
+                            <div class="bg-quntty">
+                                <h5>
+                                    Select Quantity
+                                </h5>
+                                <ul>
+                                    <li onclick="decrimant()">
+                                        -
+                                    </li>
+                                    <li id="valuede">
+                                        1
+                                    </li>
+                                    <li onclick="incrimant()">
+                                        +
+                                    </li>
+                                    <br>
+                                    <br>
+                                    <li class="total-amountbg bordernone">
+                                        <b>Total Amount:</b>
+                                    </li>
+                                    <br>
+                                    <li id="plusevalue" class="bordernone" style="color: blue;">
+                                        <b>150</b>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <button onclick="continueBG()" class="btn btn-primary">
+                        Continue
+                    </button>
+                </div>
+
+                <div id="cmnnonebg2">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="cmnnonebg2-left">
+                                <img src="images/product-bg2.png" alt="">
+                                <br>
+                                <p>Printed Rayon Kurta</p>
+                                <p>M</p>
+                                <ul>
+                                    <li>
+                                        1
+                                    </li>
+                                    <li class="bordernone" style="width: 100px; text-align: start;">
+                                        RS 155
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="cnmnonebg2-right">
+                                <h5>
+                                    ENTER MOBILE NUMBER
+                                </h5>
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text" id="basic-addon1">
+                                        <img src="images/whatsappIcon.png" alt="">
+                                    </span>
+                                    <input type="number" class="form-control" placeholder="Mobile No." aria-label="Username" aria-describedby="basic-addon1">
+                                  </div>
+                                  <br>
+                                  <button class="btn btn-primary" onclick="numberconfarm()">
+                                    Confirm number
+                                  </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="cnmnonebg3">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="cmnnonebg2-left">
+                                <img src="images/product-bg2.png" alt="">
+                                <br>
+                                <p>Printed Rayon Kurta</p>
+                                <p>M</p>
+                                <ul>
+                                    <li>
+                                        1
+                                    </li>
+                                    <li class="bordernone" style="width: 100px; text-align: start;">
+                                        RS 155
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-8">
+                            <h5>
+                                BASIC DETAILS
+                            </h5>
+                            <div class="input-group mb-3">
+                                <!-- <span class="input-group-text" id="basic-addon1">@</span> -->
+                                <input type="text" class="form-control" required placeholder="Enter Yout Name" aria-label="Username" aria-describedby="basic-addon1">
+                              </div>
+                              <ul class="bacickdet">
+                                <li>
+                                    <div class="input-group mb-3">
+                                        <!-- <span class="input-group-text" id="basic-addon1">@</span> -->
+                                        <input type="number" class="form-control" required placeholder="Pincode" aria-label="Username" aria-describedby="basic-addon1">
+                                      </div>
+                                </li>
+                                <li>
+                                    <div class="input-group mb-3">
+                                        <!-- <span class="input-group-text" id="basic-addon1">@</span> -->
+                                        <input type="number" class="form-control" required placeholder="House no." aria-label="Username" aria-describedby="basic-addon1">
+                                      </div>
+                                </li>
+                              </ul>
+
+                              <div class="input-group">
+                                <!-- <span class="input-group-text">With textarea</span> -->
+                                <textarea class="form-control" placeholder="Full address of Delivery" aria-label="With textarea" ></textarea>
+                              </div>
+                              <br>
+
+                              <button onclick="savecontbg()" class="btn btn-primary">
+                                Save & Continue
+                              </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="cnmnonebg4">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="cmnnonebg2-left">
+                                <img src="images/product-bg2.png" alt="">
+                                <br>
+                                <p>Printed Rayon Kurta</p>
+                                <p>M</p>
+                                <ul>
+                                    <li>
+                                        1
+                                    </li>
+                                    <li class="bordernone" style="width: 100px; text-align: start;">
+                                        RS 155
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-8">
+                            <h5>PAYMENT METHOD</h5>
+                            
+                            <div class="paymentmet-wp">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                    <label class="form-check-label" for="flexRadioDefault1">
+                                        Pay Online
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                                    <label class="form-check-label" for="flexRadioDefault2">
+                                        Pay COD
+                                    </label>
+                                  </div>
+                                  <br>
+                                  <h6>
+                                    Bill Details
+                                  </h6>
+                                  <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="billleft">
+                                            Items
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="billright">
+                                            1
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <div class="billleft">
+                                            Item Total
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="billright">
+                                            1080
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <div class="billleft">
+                                            Sale Discount
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="billright">
+                                            -RS 200
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <div class="billleft">
+                                            Total Amount
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="billright">
+                                            880
+                                        </div>
+                                    </div>
+                                  </div>
+                            </div>
+                            <br>
+                            <img src="images/VisaMastercardicons.png" alt="">
+                            <br>
+                            <br>
+                            <div class="payamauntbg">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <span>Total amount</span>
+                                        <p style="color:blue;">880</p>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="orderbtn-bg">
+                                            <button class="btn btn-primary">
+                                                Order Now
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <footer class="footer-wp">
+        <div class="container">
+            <div class="footer-sec">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="footer-fistsec">
+                            <h6>ASSINE NOSSA NEWSLETTER</h6>
+                            <div class="input-group mb-3">
+                                <input type="email" class="form-control" placeholder="E-mail" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                              </div>
+                              <ul>
+                                <li>
+                                    <img src="images/facebook-Icon.svg" alt="">
+                                </li>
+                                <li>
+                                    <img src="images/instagram-icon.svg" alt="">
+                                </li>
+                              </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="footer-twosec">
+                            <h6>DEPARTAMENTOS</h6>
+                            <ul>
+                                <li>
+                                    <a href="#">Vestidos Curtos</a>
+                                </li>
+                                <li>
+                                    <a href="#">Vestidos Longos</a>
+                                </li>
+                                <li>
+                                    <a href="#">Chemise</a>
+                                </li>
+                                <li>
+                                    <a href="#">Bolsas</a>
+                                </li>
+                                <li>
+                                    <a href="#">Shorts</a>
+                                </li>
+                                <li>
+                                    <a href="#">Camisas</a>
+                                </li>
+                                <li>
+                                    <a href="#">Calças</a>
+                                </li>
+                                <li>
+                                    <a href="#">Jaqueta</a>
+                                </li>
+                                <li>
+                                    <a href="#">Sale</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="footer-lastsec">
+                            <h6>ENTRE EM CONTATO</h6>
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        1234567890
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        1234567890
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        govind@gmail.com
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Rua João Cachoeira, n° 571 - Sala 16
+                                    </a>
+                                </li>
+                                
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="">
+                
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/code.jquery.com_jquery-3.7.1.min.js"></script>
+    <!-- <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script> -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <script>
+        function continueBG() {
+            document.getElementById('cmnnonebg1').style.display = "none";
+            document.getElementById('cmnnonebg2').style.display = "block";
+        }
+
+        function numberconfarm() {
+            document.getElementById('cmnnonebg2').style.display = "none";
+            document.getElementById('cnmnonebg3').style.display = "block";
+        }
+
+        function savecontbg(){
+            document.getElementById('cnmnonebg3').style.display = "none";
+
+            document.getElementById('cnmnonebg4').style.display = "block";
+
+        }
+        
+    </script>
+
+    <script>
+
+        var valuebg = 150;
+
+        var A = 1;
+
+        function incrimant(){
+            if (A < 50) {
+                A++
+                document.getElementById('valuede').innerHTML = A;
+                // valuebg
+                // document.getElementById('plusevalue').innerHTML = valuebg;
+            }
+        }
+
+
+        function decrimant(){
+            if (A > 1) {
+                A--
+                document.getElementById('valuede').innerHTML = A;
+                valuebg--
+                // document.getElementById('plusevalue').innerHTML = valuebg;
+            }
+        }
+
+        
+    </script>
+    <script>
+        // $('.').slick({
+        // dots: true,
+        // infinite: false,
+        // speed: 300,
+        // slidesToShow: 4,
+        // slidesToScroll: 1,
+        // responsive: [
+        //     {
+        //     breakpoint: 1024,
+        //     settings: {
+        //         slidesToShow: 3,
+        //         slidesToScroll: 3,
+        //         infinite: true,
+        //         dots: true
+        //     }
+        //     },
+        //     {
+        //     breakpoint: 600,
+        //     settings: {
+        //         slidesToShow: 2,
+        //         slidesToScroll: 2
+        //     }
+        //     },
+        //     {
+        //     breakpoint: 480,
+        //     settings: {
+        //         slidesToShow: 1,
+        //         slidesToScroll: 1
+        //     }
+        //     }
+        // ]
+        // });
+    </script>
+    <script>
+        AOS.init();
+      </script>
+      <script>
+        function openCity(evt, cityName) {
+          var i, tabcontent, tablinks;
+          tabcontent = document.getElementsByClassName("tabcontent");
+          for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+          }
+          tablinks = document.getElementsByClassName("tablinks");
+          for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+          }
+          document.getElementById(cityName).style.display = "block";
+          evt.currentTarget.className += " active";
+        }
+        </script>
+        
+        <script>
+                const lis = document.querySelectorAll('li');
+
+                function changeBackgroundColor(element, color) {
+                element.style.backgroundColor = color;
+                }
+
+                function resetBackgroundColor() {
+                lis.forEach(function(li) {
+                    changeBackgroundColor(li, '');
+                });
+                }
+
+                lis.forEach(function(li) {
+                li.addEventListener('click', function() {
+                    resetBackgroundColor();
+                    changeBackgroundColor(li, '#ceceff');
+                });
+                });
+
+                // 
+                
+                var subww = 1;
+                var valueprice = 219;
+                function subinc(){
+                    if (subww < 50){
+                        subww++
+                        document.getElementById('subvalue').innerHTML = subww;
+                        var valuesub = document.getElementById('pricevalue');
+
+                        var currentValue = parseInt(valuesub.innerHTML);
+                        var newValue = currentValue + 219;
+
+                        valuesub.innerHTML = newValue;
+
+                        var valuesub = document.getElementById('pricevalue2');
+
+                        var currentValue = parseInt(valuesub.innerHTML);
+                        var newValue = currentValue + 219;
+
+                        valuesub.innerHTML = newValue;
+                    }
+                }
+
+                function subdec() {
+                    if (subww > 1) {
+                        subww--;
+                        document.getElementById('subvalue').innerHTML = subww;
+
+                        var valuesub = document.getElementById('pricevalue');
+                        var currentValue = parseInt(valuesub.innerHTML);
+                        var newValue = currentValue - 219;
+
+                        valuesub.innerHTML = newValue;
+
+                        var valuesub = document.getElementById('pricevalue2');
+                        var currentValue = parseInt(valuesub.innerHTML);
+                        var newValue = currentValue - 219;
+
+                        valuesub.innerHTML = newValue;
+                        
+                    }
+                }
+
+
+                // 
+
+
+                function deleteBtn() {
+    console.log("Button clicked"); // Add this line for debugging
+    document.getElementById('cardProducadd').style.display = "none";
+    document.getElementById('totalID').style.display = "none";
+    // 
+}
+                
+        </script>
+
+        <script>
+
+            var valueDi = 1;
+            function incre(){
+                if (valueDi < 50){
+                    valueDi++
+                document.getElementById('valueID').innerHTML = valueDi;
+                }
+            }
+
+            function dencre(){
+                if (valueDi > 1) {
+                    valueDi--
+                document.getElementById('valueID').innerHTML = valueDi;
+                }
+            }
+        </script>
+
+<script>
+    $(document).ready(function () {
+        $(".owl-carousel").owlCarousel({
+            items: 3, // Number of items to display
+            loop: true, // Infinite loop
+            margin: 10, // Space between items
+            autoplay: true, // Auto-play
+            autoplayTimeout: 3000, // Auto-play timeout in milliseconds (3 seconds)
+            responsive: {
+                0: {
+                    items: 1 // Number of items to display on small screens
+                },
+                768: {
+                    items: 2 // Number of items to display on medium screens
+                },
+                992: {
+                    items: 3 // Number of items to display on large screens
+                }
+            }
+        });
+    });
+</script>
+    
+</body>
+</html>
