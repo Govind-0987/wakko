@@ -20,6 +20,18 @@
 
     <style>
 
+.detprobg button {
+    border: none;
+    background: #f6f6f6;
+    font-size: 14px;
+    color: blue;
+    font-weight: 500;
+}
+
+        #prograpBG{
+            display: none;
+        }
+
 li.btnclosebggb button {
     border: 1px solid #d3d3d3 !important;
 }
@@ -521,9 +533,26 @@ button.btn.btn-primary.buybggb {
                     </div>
                 </div>
             </div>
-            <p style="margin-top: 20px; font-size: 14px;">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus vitae dignissimos, rerum odit repellendus tempora neque enim harum blanditiis adipisci. Eligendi quibusdam saepe molestias, facere quidem possimus similique? Doloribus cumque impedit laboriosam in unde repellendus exercitationem atque fuga, voluptate sint sunt eaque harum placeat ad optio recusandae blanditiis aliquam? Dolorum.
-            </p>
+            <div class="detprobg" style="margin-top: 20px;">
+                <h6>Product Details</h6>
+                <p id="prograpBG">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus vitae dignissimos, rerum odit repellendus tempora neque enim harum blanditiis adipisci. Eligendi quibusdam saepe molestias, facere quidem possimus similique? Doloribus cumque impedit laboriosam in unde repellendus exercitationem atque fuga, voluptate sint sunt eaque harum placeat ad optio recusandae blanditiis aliquam? Dolorum.</p>
+                <button onclick="showbgbtn()" id="changevaluebg">Show More</button>
+                
+            </div>
+            <script>
+                var shogbbg = 1;
+                function showbgbtn(){
+                    if (shogbbg == 1) {
+                        document.getElementById('prograpBG').style.display = "block";
+                        document.getElementById('changevaluebg').innerHTML = "Less More";
+                        shogbbg = 0;
+                    } else if(shogbbg == 0){
+                        document.getElementById('prograpBG').style.display = "none";
+                        document.getElementById('changevaluebg').innerHTML = "Show More";
+                        shogbbg = 1;
+                    }
+                }
+            </script>
         </div>
     </section>
 
