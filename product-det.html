@@ -17,8 +17,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
 
-    
+
     <style>
+
+li.btnclosebggb button {
+    border: 1px solid #d3d3d3 !important;
+}
+
 
 li.bggbbg-li {
     float: right;
@@ -71,6 +76,17 @@ button.btn.btn-primary.buybggb {
 
         .tabcontent3 {
           display: none;
+        }
+
+
+        @media only screen and (max-width: 992px) {
+            ul.threedaybg {
+                height: 100px !important;
+            }
+            li.bggbbg-li {
+                float: left;
+                margin-top: 10px;
+            }
         }
     </style>
 </head>
@@ -347,7 +363,7 @@ button.btn.btn-primary.buybggb {
                                                                         </div>
                                                                     </div>
                                                                 <ul>
-                                                                    <li>
+                                                                    <li class="btnclosebggb">
                                                                         <button type="button" class="btn" data-bs-dismiss="modal" style="border: none;">Close</button>
                                                                     </li>
                                                                     <li class="carrinho-bg">
@@ -391,7 +407,7 @@ button.btn.btn-primary.buybggb {
                                     Cash on Delivery
                                 </li>
                             </ul>
-                            <ul>
+                            <ul class="threedaybg">
                                 <li>
                                     <img src="images/delivery-3.svg" alt="">
                                 </li>
