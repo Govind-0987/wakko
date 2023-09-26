@@ -22,7 +22,7 @@
 
 .detprobg button {
     border: none;
-    background: #f6f6f6;
+    background: none;
     font-size: 14px;
     color: blue;
     font-weight: 500;
@@ -532,10 +532,11 @@ button.btn.btn-primary.buybggb {
                         
                     </div>
                 </div>
-            </div>
-            <div class="detprobg" style="margin-top: 20px;">
-                <h6>Product Details</h6>
-                <p id="prograpBG">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus vitae dignissimos, rerum odit repellendus tempora neque enim harum blanditiis adipisci. Eligendi quibusdam saepe molestias, facere quidem possimus similique? Doloribus cumque impedit laboriosam in unde repellendus exercitationem atque fuga, voluptate sint sunt eaque harum placeat ad optio recusandae blanditiis aliquam? Dolorum.</p>
+                </div>
+            <h6  style="margin-top: 20px;">Product Details</h6>
+            <div id="bggbdetprobg" class="detprobg">
+                <span id="prograpBGOne">Lorem ipsum, dolor sit...</span>
+                <span id="prograpBG">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus vitae dignissimos, rerum odit repellendus tempora neque enim harum blanditiis adipisci. Eligendi quibusdam saepe molestias, facere quidem possimus similique? Doloribus cumque impedit laboriosam in unde repellendus exercitationem atque fuga, voluptate sint sunt eaque harum placeat ad optio recusandae blanditiis aliquam? Dolorum.</span>
                 <button onclick="showbgbtn()" id="changevaluebg">Show More</button>
                 
             </div>
@@ -544,10 +545,14 @@ button.btn.btn-primary.buybggb {
                 function showbgbtn(){
                     if (shogbbg == 1) {
                         document.getElementById('prograpBG').style.display = "block";
+                        document.getElementById('prograpBGOne').style.display = "none";
+                        document.getElementById('bggbdetprobg').style.display = "block";
                         document.getElementById('changevaluebg').innerHTML = "Less More";
                         shogbbg = 0;
                     } else if(shogbbg == 0){
+                        document.getElementById('prograpBGOne').style.display = "block";
                         document.getElementById('prograpBG').style.display = "none";
+                        document.getElementById('bggbdetprobg').style.display = "flex";
                         document.getElementById('changevaluebg').innerHTML = "Show More";
                         shogbbg = 1;
                     }
